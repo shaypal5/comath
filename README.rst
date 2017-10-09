@@ -7,7 +7,7 @@ A small pure-python package for data comathure related utility functions.
 .. code-block:: python
 
   >>> from comath.array import percentile
-  >>> percentile([11, 9,8, 6, 4], 0.4)
+  >>> percentile([11, 9, 8, 6, 4], 0.4)
   8.4
 
 .. contents::
