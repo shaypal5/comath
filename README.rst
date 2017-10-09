@@ -7,8 +7,8 @@ A small pure-python package for data comathure related utility functions.
 .. code-block:: python
 
   >>> from comath.array import percentile
-  >>> percentile([11, 9, 8, 6, 4], 0.4)
-  8.4
+  >>> percentile([4,6,8,9,11], 0.4)
+  7.0
 
 .. contents::
 
@@ -84,7 +84,7 @@ To run the tests, use:
 
 .. code-block:: bash
 
-  python -m pytest --cov=comath
+  python -m pytest --cov=comath --doctest-modules
 
 
 Adding documentation
