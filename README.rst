@@ -1,5 +1,6 @@
 comath
 ######
+
 |PyPI-Status| |PyPI-Versions| |Build-Status| |Codecov| |LICENCE|
 
 A small pure-python package for math-related utility functions.
@@ -31,7 +32,7 @@ Use
 ``comath`` is divided into four sub-modules.
 
 array
-----
+-----
 
 Array operations like percentile and median.
 

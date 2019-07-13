@@ -16,7 +16,11 @@ with open('README.rst') as f:
     README_RST = f.read()
 
 INSTALL_REQUIRES = []
-TEST_REQUIRES = ['pytest', 'coverage', 'pytest-cov']
+TEST_REQUIRES = [
+    'pytest', 'coverage', 'pytest-cov'
+    # to be able to run `python setup.py checkdocs`
+    'collective.checkdocs', 'pygments',
+]
 
 
 setup(
