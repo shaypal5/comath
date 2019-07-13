@@ -3,43 +3,38 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from setuptools import (
-    setup,
-    find_packages,
-)
-
+import setuptools
 import versioneer
 
 
-README_RST = ''
 with open('README.rst') as f:
-    README_RST = f.read()
+    README = f.read()
 
 INSTALL_REQUIRES = []
 TEST_REQUIRES = [
-    'pytest', 'coverage', 'pytest-cov'
+    # testing and coverage
+    'pytest', 'coverage', 'pytest-cov',
     # to be able to run `python setup.py checkdocs`
     'collective.checkdocs', 'pygments',
 ]
 
 
-setup(
-    name='comath',
-    description="Math-related utility functions.",
-    long_description=README_RST,
+setuptools.setup(
     author="Shay Palachy",
     author_email="shaypal5@gmail.com",
+    name='comath',
+    license="MIT",
+    description="Math-related utility functions.",
+    long_description=README,
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     url='https://github.com/shaypal5/comath',
-    license="MIT",
-    packages=find_packages(exclude=['dist', 'docs', 'tests']),
+    python_requires=">=3.5",
+    packages=setuptools.find_packages(),
     install_requires=INSTALL_REQUIRES,
     extras_require={
-        'test': TEST_REQUIRES
+        'test': TEST_REQUIRES + INSTALL_REQUIRES
     },
-    setup_requires=INSTALL_REQUIRES,
-    platforms=['any'],
     keywords='python math array metric function segment',
     classifiers=[
         # Trove classifiers
