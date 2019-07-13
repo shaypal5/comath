@@ -21,8 +21,7 @@ TEST_REQUIRES = ['pytest', 'coverage', 'pytest-cov']
 
 setup(
     name='comath',
-    description=("A small pure-python package for math related"
-                 "utility functions."),
+    description="Math-related utility functions.",
     long_description=README_RST,
     author="Shay Palachy",
     author_email="shaypal5@gmail.com",

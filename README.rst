@@ -1,5 +1,5 @@
 comath
-#########
+######
 |PyPI-Status| |PyPI-Versions| |Build-Status| |Codecov| |LICENCE|
 
 A small pure-python package for math-related utility functions.
